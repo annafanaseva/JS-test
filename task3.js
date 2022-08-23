@@ -145,9 +145,26 @@ document.write('-');
 
 //Составьте массив дней недели. 
 //С помощью цикла for выведите все дни недели, а выходные дни выведите жирным.
+arr = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
 
-
+for (i = 0; i < arr.length; i++) {
+  if (arr[i] === "saturday" || arr[i] === "sunday") {
+    document.write("<h2>" + arr[i] + "</h2>");
+  } else {
+    document.write(arr[i]);
+  }
+}
 
 //Составьте массив дней недели. 
 //С помощью цикла for выведите все дни недели, а текущий день выведите курсивом. 
 //Текущий день должен храниться в переменной day.
+
+let day = "friday";
+
+for (i = 0; i < arr.length; i++) {
+  if (arr[i] === day) {
+    document.write("<h2>" + arr[i] + "</h2>");
+  } else {
+    document.write(arr[i]);
+  }
+}
